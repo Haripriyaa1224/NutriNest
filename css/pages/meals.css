@@ -1,0 +1,181 @@
+/* =========================================================
+   MEALS & PLANS PAGE — specific styles
+   ========================================================= */
+
+/* =========================================================
+   1. WEEKLY MENU LIST
+   ========================================================= */
+.weekly-menu {
+  background-color: var(--c-bg-sand-soft);
+  padding-block: var(--sp-8);
+}
+
+.menu-list {
+  max-width: 800px;
+  margin-inline: auto;
+  border-top: 1px solid var(--c-border);
+  margin-bottom: var(--sp-3);
+}
+
+.menu-row {
+  display: flex;
+  justify-content: space-between;
+  padding-block: var(--sp-2);
+  border-bottom: 1px solid var(--c-border);
+  font-size: 0.95rem;
+}
+
+.menu-row__day {
+  font-weight: 600;
+  color: var(--c-text);
+  min-width: 120px;
+}
+
+.menu-row__meal {
+  color: var(--c-text-muted);
+  text-align: right;
+}
+
+.menu-note {
+  text-align: center;
+  font-size: 0.75rem;
+  color: var(--c-text-muted);
+  font-style: italic;
+}
+
+/* =========================================================
+   2. SUBSCRIPTIONS
+   ========================================================= */
+.subscriptions {
+  padding-block: var(--sp-8);
+}
+
+.subscription-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--sp-3);
+  align-items: stretch; /* Ensures cards are equal height */
+}
+
+.sub-card {
+  border: 1px solid var(--c-border);
+  padding: var(--sp-4);
+  display: flex;
+  flex-direction: column;
+  background: transparent;
+}
+
+.sub-card__title {
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  color: var(--c-brand);
+  margin-bottom: var(--sp-2);
+}
+
+.sub-card__desc {
+  font-size: 0.85rem;
+  color: var(--c-text-muted);
+  line-height: 1.5;
+  margin-bottom: var(--sp-4);
+  flex-grow: 1;
+}
+
+.sub-card__price {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--c-text);
+  margin-top: auto;
+}
+
+/* Dark Highlighted Card */
+.sub-card--dark {
+  background-color: var(--c-brand);
+  border-color: var(--c-brand);
+  color: var(--c-text-inverse);
+}
+
+.sub-card--dark .sub-card__title {
+  color: var(--c-text-inverse);
+}
+
+.sub-card--dark .sub-card__desc {
+  color: var(--c-text-inverse-muted);
+}
+
+.sub-card--dark .sub-card__price {
+  color: var(--c-accent);
+}
+
+/* =========================================================
+   3. DIET PLANS
+   ========================================================= */
+.diet-plans {
+  background-color: var(--c-bg-sand-soft);
+  padding-block: var(--sp-8);
+}
+
+.diet-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--sp-3);
+}
+
+.diet-card {
+  background: #FFFFFF;
+  padding: var(--sp-4);
+  border: 1px solid var(--c-border);
+  display: flex;
+  flex-direction: column;
+}
+
+.diet-card__title {
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  color: var(--c-brand);
+  margin-bottom: var(--sp-3);
+}
+
+.diet-card__text {
+  font-size: 0.85rem;
+  color: var(--c-text-muted);
+  margin-bottom: var(--sp-2);
+  line-height: 1.5;
+}
+
+.diet-card__text strong {
+  color: var(--c-text);
+  font-weight: 600;
+}
+
+.diet-card .link-cta {
+  margin-top: auto;
+  padding-top: var(--sp-3);
+}
+
+/* =========================================================
+   4. HOW A PLAN WORKS
+   ========================================================= */
+.how-plan-works {
+  padding-block: var(--sp-8);
+}
+
+/* =========================================================
+   5. RESPONSIVE
+   ========================================================= */
+@media (max-width: 1024px) {
+  .subscription-grid,
+  .diet-grid {
+    grid-template-columns: 1fr;
+    gap: var(--sp-4);
+  }
+  
+  .menu-row {
+    flex-direction: column;
+    gap: 4px;
+    padding-block: var(--sp-3);
+  }
+
+  .menu-row__meal {
+    text-align: left;
+  }
+}

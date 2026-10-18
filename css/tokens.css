@@ -22,7 +22,7 @@
   --c-accent-hover:  #C6A048;
   --c-border:        #E2DDD1;
   --c-border-inverse: rgba(255, 255, 255, 0.12);
-
+  --c-bg-sand-soft:  #F8F5EC; /* Used for alternating warm sections */
   /* Typography */
   --font-heading: 'Playfair Display', Georgia, serif;
   --font-body:    'DM Sans', system-ui, -apple-system, sans-serif;

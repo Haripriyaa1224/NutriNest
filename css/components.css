@@ -511,3 +511,64 @@ details[open] .accordion__icon::after {
   font-size: 0.9rem;
   line-height: 1.6;
 }
+
+/* =========================================================
+   18. EXTENDED COMPONENTS (Page 3 & Future)
+   ========================================================= */
+
+/* 4-Column Steps Grid (Variant of .steps) */
+.steps-grid-4 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--sp-4);
+  text-align: center;
+  margin-bottom: var(--sp-6);
+}
+
+.step-item__num {
+  display: block;
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  color: var(--c-accent);
+  margin-bottom: var(--sp-1);
+}
+
+.step-item__title {
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.step-item__text {
+  font-size: 0.8rem;
+  color: var(--c-text-muted);
+}
+
+/* Disclaimer Box */
+.disclaimer-box {
+  border: 1px solid var(--c-border);
+  padding: var(--sp-4);
+  text-align: center;
+  font-size: 0.8rem;
+  color: var(--c-text-muted);
+  line-height: 1.6;
+  max-width: 800px;
+  margin-inline: auto;
+  background-color: transparent;
+}
+
+/* Responsive adjustments for extended components */
+@media (max-width: 1024px) {
+  .steps-grid-4 {
+    grid-template-columns: 1fr 1fr;
+    gap: var(--sp-5);
+  }
+}
+
+@media (max-width: 640px) {
+  .steps-grid-4 {
+    grid-template-columns: 1fr;
+    gap: var(--sp-4);
+  }
+}

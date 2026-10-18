@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="NutriNest Meals & Plans — Daily home-cooked thalis and personalised diet plans delivered fresh." />
+  <title>Meals & Plans — NutriNest</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600&family=Playfair+Display:ital,wght@0,400;0,500;1,500&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- CSS Load Order -->
+  <link rel="stylesheet" href="css/tokens.css" />
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/components.css" />
+  <link rel="stylesheet" href="css/pages/meals.css" />
+</head>
+<body>
+
+  <!-- ============ ANNOUNCEMENT BAR ============ -->
+  <div class="announcement-bar" role="region" aria-label="Announcement">
+    <p>Made fresh daily · Chemical-free · Delivered to your door</p>
+  </div>
+
+  <!-- ============ HEADER ============ -->
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <nav class="site-nav" aria-label="Primary">
+        <ul class="site-nav__list">
+          <li><a href="index.html" class="site-nav__link">Home</a></li>
+          <li><a href="kitchen-essentials.html" class="site-nav__link">Kitchen Essentials</a></li>
+          <li><a href="meals-plans.html" class="site-nav__link" aria-current="page">Meals &amp; Plans</a></li>
+          <li><a href="our-kitchen.html" class="site-nav__link">Our Kitchen</a></li>
+        </ul>
+      </nav>
+
+      <a href="index.html" class="brand" aria-label="NutriNest home">
+        <svg class="brand__icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M12 2 2 7l10 5 10-5-10-5ZM2 17l10 5 10-5M2 12l10 5 10-5"/>
+        </svg>
+        <span class="brand__name">NutriNest</span>
+      </a>
+
+      <a href="https://wa.me/" class="btn btn--outline btn--sm" target="_blank" rel="noopener">Order on WhatsApp</a>
+    </div>
+  </header>
+
+  <main>
+    <!-- ============ PAGE HERO ============ -->
+    <section class="page-hero" aria-labelledby="page-title">
+      <div class="container page-hero__inner">
+        <p class="eyebrow">Meals &amp; Custom Diet Plans</p>
+        <h1 id="page-title" class="page-hero__title">
+          Home-cooked, <em class="page-hero__title-accent">every single day.</em>
+        </h1>
+        <p class="page-hero__lead">
+          Daily thalis cooked fresh each morning, and personalised diet plans built around your goals.
+        </p>
+        
+        <!-- Filter Chips -->
+        <div class="filter-chips" role="group" aria-label="Filter categories">
+          <button class="filter-chip" aria-pressed="true">Daily Meals</button>
+          <button class="filter-chip" aria-pressed="false">Diet Plans</button>
+          <button class="filter-chip" aria-pressed="false">Consultation</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 01 — DAILY MEALS (Split) ============ -->
+    <section class="feature-split" aria-labelledby="thali-title">
+      <div class="container feature-split__inner">
+        <figure class="feature-split__media">
+          <div class="image-placeholder image-placeholder--arch" aria-hidden="true">
+            <span>[Photo · Full thali, steel tiffin]</span>
+          </div>
+        </figure>
+        
+        <div class="feature-split__content">
+          <p class="eyebrow">01 — Daily Meals</p>
+          <h2 id="thali-title" class="feature-split__title">The thali, the way home makes it</h2>
+          <p class="feature-split__text">
+            Rice, two vegetable dishes, sambar or rasam, curd and pickle, cooked that morning in our home kitchen and packed hot for lunch or dinner.
+          </p>
+          <p class="feature-split__meta">
+            Veg · [Non-veg option] · Lunch or dinner · Rotating weekly menu
+          </p>
+          <a href="https://wa.me/" class="btn btn--primary" target="_blank" rel="noopener">Start a Trial on WhatsApp</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ WEEKLY MENU ============ -->
+    <section class="weekly-menu" aria-labelledby="menu-title">
+      <div class="container">
+        <header class="section-head section-head--center">
+          <p class="eyebrow">This Week's Rotation</p>
+          <h2 id="menu-title" class="section-title">Weekly menu</h2>
+        </header>
+
+        <div class="menu-list">
+          <div class="menu-row">
+            <span class="menu-row__day">Monday</span>
+            <span class="menu-row__meal">[Rice · curry · poriyal · curd]</span>
+          </div>
+          <div class="menu-row">
+            <span class="menu-row__day">Tuesday</span>
+            <span class="menu-row__meal">[Rice · curry · poriyal · curd]</span>
+          </div>
+          <div class="menu-row">
+            <span class="menu-row__day">Wednesday</span>
+            <span class="menu-row__meal">[Rice · curry · poriyal · curd]</span>
+          </div>
+          <div class="menu-row">
+            <span class="menu-row__day">Thursday</span>
+            <span class="menu-row__meal">[Rice · curry · poriyal · curd]</span>
+          </div>
+          <div class="menu-row">
+            <span class="menu-row__day">Friday</span>
+            <span class="menu-row__meal">[Rice · curry · poriyal · curd]</span>
+          </div>
+          <div class="menu-row">
+            <span class="menu-row__day">Saturday</span>
+            <span class="menu-row__meal">[Rice · curry · poriyal · curd]</span>
+          </div>
+        </div>
+        
+        <p class="menu-note">Menu changes weekly. Special diets and allergies noted on request.</p>
+      </div>
+    </section>
+
+    <!-- ============ SUBSCRIPTIONS ============ -->
+    <section class="subscriptions" aria-labelledby="sub-title">
+      <div class="container">
+        <header class="section-head section-head--center">
+          <p class="eyebrow">Subscriptions</p>
+          <h2 id="sub-title" class="section-title">Choose how often you'd like home</h2>
+          <p class="section-lead">Pause or skip any day, for travel or festivals.</p>
+        </header>
+
+        <div class="subscription-grid">
+          <!-- Card 1 -->
+          <article class="sub-card">
+            <h3 class="sub-card__title">Trial</h3>
+            <p class="sub-card__desc">3 days, lunch or dinner. Taste the food before you commit.</p>
+            <p class="sub-card__price">[₹ price]</p>
+          </article>
+          <!-- Card 2 -->
+          <article class="sub-card">
+            <h3 class="sub-card__title">Weekly</h3>
+            <p class="sub-card__desc">6 days a week with the rotating menu. Our most flexible plan.</p>
+            <p class="sub-card__price">[₹ price] / week</p>
+          </article>
+          <!-- Card 3 (Highlighted) -->
+          <article class="sub-card sub-card--dark">
+            <h3 class="sub-card__title">Monthly</h3>
+            <p class="sub-card__desc">26 days with the best value and priority delivery. [Save X%]</p>
+            <p class="sub-card__price">[₹ price] / month</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 02 — DIET PLANS ============ -->
+    <section class="diet-plans" aria-labelledby="diet-title">
+      <div class="container">
+        <header class="section-head section-head--center">
+          <p class="eyebrow">02 — Diet Plans</p>
+          <h2 id="diet-title" class="section-title">Eat well, not less</h2>
+          <p class="section-lead">Outcome-led meal plans, cooked fresh and delivered daily.</p>
+        </header>
+
+        <div class="diet-grid">
+          <!-- Diet 1 -->
+          <article class="diet-card">
+            <h3 class="diet-card__title">Weight Management</h3>
+            <p class="diet-card__text"><strong>For:</strong> Steady, sustainable fat loss</p>
+            <p class="diet-card__text"><strong>Sample day:</strong> [Breakfast - lunch - snack - dinner]</p>
+            <p class="diet-card__text"><strong>Includes:</strong> Custom menu, portion guidance, weekly check-in</p>
+            <a href="#" class="link-cta">Ask for this plan <span aria-hidden="true">→</span></a>
+          </article>
+          <!-- Diet 2 -->
+          <article class="diet-card">
+            <h3 class="diet-card__title">Diabetic-Friendly</h3>
+            <p class="diet-card__text"><strong>For:</strong> Balanced, low-glycaemic meals</p>
+            <p class="diet-card__text"><strong>Sample day:</strong> [Breakfast - lunch - snack - dinner]</p>
+            <p class="diet-card__text"><strong>Includes:</strong> Custom menu, portion guidance, weekly check-in</p>
+            <a href="#" class="link-cta">Ask for this plan <span aria-hidden="true">→</span></a>
+          </article>
+          <!-- Diet 3 -->
+          <article class="diet-card">
+            <h3 class="diet-card__title">High-Protein</h3>
+            <p class="diet-card__text"><strong>For:</strong> Muscle gain and active lifestyles</p>
+            <p class="diet-card__text"><strong>Sample day:</strong> [Breakfast - lunch - snack - dinner]</p>
+            <p class="diet-card__text"><strong>Includes:</strong> Custom menu, portion guidance, weekly check-in</p>
+            <a href="#" class="link-cta">Ask for this plan <span aria-hidden="true">→</span></a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ HOW A PLAN WORKS ============ -->
+    <section class="how-plan-works" aria-labelledby="how-title">
+      <div class="container">
+        <header class="section-head section-head--center">
+          <p class="eyebrow">How a Plan Works</p>
+          <h2 id="how-title" class="section-title">Personal from day one</h2>
+        </header>
+
+        <!-- Uses new 4-column steps grid -->
+        <ol class="steps-grid-4">
+          <li class="step-item">
+            <span class="step-item__num">1</span>
+            <h3 class="step-item__title">Share your goals</h3>
+            <p class="step-item__text">Tell us on WhatsApp.</p>
+          </li>
+          <li class="step-item">
+            <span class="step-item__num">2</span>
+            <h3 class="step-item__title">Get your menu</h3>
+            <p class="step-item__text">We design a custom plan.</p>
+          </li>
+          <li class="step-item">
+            <span class="step-item__num">3</span>
+            <h3 class="step-item__title">Eat fresh daily</h3>
+            <p class="step-item__text">Cooked and delivered each day.</p>
+          </li>
+          <li class="step-item">
+            <span class="step-item__num">4</span>
+            <h3 class="step-item__title">Weekly check-in</h3>
+            <p class="step-item__text">We adjust as you progress.</p>
+          </li>
+        </ol>
+
+        <!-- Health Disclaimer Box -->
+        <div class="disclaimer-box">
+          <p><strong>A note on health.</strong> Our plans support healthy eating and are not medical treatment. If you have a medical condition, please consult your doctor before starting. [Add your dietitian credentials here if applicable.]</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ BOTTOM CTA ============ -->
+    <section class="cta" aria-labelledby="cta-title">
+      <div class="container cta__inner">
+        <h2 id="cta-title" class="cta__title">Book a free 10-minute diet consultation</h2>
+        <p class="cta__text">Tell us your goals. We'll suggest the right plan.</p>
+        <a href="https://wa.me/" class="btn btn--gold" target="_blank" rel="noopener">Book on WhatsApp</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="site-footer__grid">
+        <div class="site-footer__brand">
+          <p class="brand__name">NutriNest</p>
+          <p class="site-footer__tagline">Fresh from our kitchen, nested in your home.</p>
+        </div>
+
+        <nav class="site-footer__col" aria-label="Explore">
+          <h3 class="site-footer__heading">Explore</h3>
+          <ul>
+            <li><a href="kitchen-essentials.html">Kitchen Essentials</a></li>
+            <li><a href="meals-plans.html">Meals &amp; Plans</a></li>
+            <li><a href="our-kitchen.html">Our Kitchen</a></li>
+          </ul>
+        </nav>
+
+        <div class="site-footer__col">
+          <h3 class="site-footer__heading">Contact</h3>
+          <ul>
+            <li>WhatsApp: +91 XXXXX XXXXX</li>
+            <li>Instagram: @handle</li>
+            <li>Delivery areas: [list areas]</li>
+          </ul>
+        </div>
+
+        <div class="site-footer__col">
+          <h3 class="site-footer__heading">Licence</h3>
+          <ul>
+            <li>FSSAI: [to be added]</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="site-footer__bottom">
+        <p class="site-footer__copy">© <span id="year"></span> NutriNest. All rights reserved.</p>
+        <a href="https://wa.me/" class="btn btn--ghost btn--sm" target="_blank" rel="noopener">Order on WhatsApp</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
