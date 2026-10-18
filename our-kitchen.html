@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="NutriNest Our Kitchen — See where your food is made, our hygiene standards, delivery zones, and how to order." />
+  <title>Our Kitchen — NutriNest</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600&family=Playfair+Display:ital,wght@0,400;0,500;1,500&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- CSS Load Order -->
+  <link rel="stylesheet" href="css/tokens.css" />
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/components.css" />
+  <link rel="stylesheet" href="css/pages/kitchen.css" />
+</head>
+<body>
+
+  <!-- ============ ANNOUNCEMENT BAR ============ -->
+  <div class="announcement-bar" role="region" aria-label="Announcement">
+    <p>Made fresh daily · Chemical-free · Delivered to your door</p>
+  </div>
+
+  <!-- ============ HEADER ============ -->
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <nav class="site-nav" aria-label="Primary">
+        <ul class="site-nav__list">
+          <li><a href="index.html" class="site-nav__link">Home</a></li>
+          <li><a href="kitchen-essentials.html" class="site-nav__link">Kitchen Essentials</a></li>
+          <li><a href="meals-plans.html" class="site-nav__link">Meals &amp; Plans</a></li>
+          <li><a href="our-kitchen.html" class="site-nav__link" aria-current="page">Our Kitchen</a></li>
+        </ul>
+      </nav>
+
+      <a href="index.html" class="brand" aria-label="NutriNest home">
+        <svg class="brand__icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M12 2 2 7l10 5 10-5-10-5ZM2 17l10 5 10-5M2 12l10 5 10-5"/>
+        </svg>
+        <span class="brand__name">NutriNest</span>
+      </a>
+
+      <a href="https://wa.me/" class="btn btn--outline btn--sm" target="_blank" rel="noopener">Order on WhatsApp</a>
+    </div>
+  </header>
+
+  <main>
+    <!-- ============ PAGE HERO ============ -->
+    <section class="page-hero" aria-labelledby="page-title">
+      <div class="container page-hero__inner">
+        <p class="eyebrow">Our Kitchen, Hygiene &amp; How to Order</p>
+        <h1 id="page-title" class="page-hero__title">
+          A kitchen with <em class="page-hero__title-accent">nothing to hide.</em>
+        </h1>
+        <p class="page-hero__lead">
+          Come see where your food is made, how we keep it clean, and how simple it is to order.
+        </p>
+        
+        <!-- Filter Chips (Used as anchored navigation here) -->
+        <div class="filter-chips" role="group" aria-label="Page sections">
+          <a href="#tour" class="filter-chip" aria-pressed="true">Kitchen Tour</a>
+          <a href="#hygiene" class="filter-chip" aria-pressed="false">Hygiene</a>
+          <a href="#zones" class="filter-chip" aria-pressed="false">Delivery Zones</a>
+          <a href="#order" class="filter-chip" aria-pressed="false">How to Order</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ KITCHEN TOUR ============ -->
+    <section id="tour" class="kitchen-tour" aria-labelledby="tour-title">
+      <div class="container">
+        <header class="section-head section-head--center">
+          <p class="eyebrow">Kitchen Tour</p>
+          <h2 id="tour-title" class="section-title">Step inside</h2>
+        </header>
+
+        <div class="tour-grid">
+          <!-- Large Video/Image Left -->
+          <div class="tour-main">
+            <div class="image-placeholder image-placeholder--sage" aria-hidden="true" style="aspect-ratio: 16/10;">
+              <span>[Video · 30-second kitchen walkthrough]</span>
+            </div>
+          </div>
+          <!-- Two Stacked Images Right -->
+          <div class="tour-side">
+            <div class="image-placeholder image-placeholder--sand" aria-hidden="true" style="aspect-ratio: 4/3;">
+              <span>[Photo · Prep area]</span>
+            </div>
+            <div class="image-placeholder image-placeholder--sage" aria-hidden="true" style="aspect-ratio: 4/3;">
+              <span>[Photo · Packing station]</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ HYGIENE STANDARDS ============ -->
+    <section id="hygiene" class="hygiene-section" aria-labelledby="hygiene-title">
+      <div class="container hygiene-inner">
+        <div class="hygiene-content">
+          <p class="eyebrow">Hygiene Standards</p>
+          <h2 id="hygiene-title" class="hygiene-title">Clean is not a claim. It's a routine.</h2>
+          <p class="hygiene-text">[Edit this list to match your real practice. Only claim what you do every day.]</p>
+        </div>
+        
+        <ul class="hygiene-list">
+          <li>Hands washed, gloves and caps worn</li>
+          <li>Clean aprons and tied-back hair</li>
+          <li>Daily surface and utensil sanitising</li>
+          <li>Filtered water for washing and cooking</li>
+          <li>Fresh ingredients, checked each morning</li>
+          <li>Paneer and perishables kept chilled</li>
+          <li>Sealed, dated packing</li>
+          <li>Waste cleared daily</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ SOURCING ============ -->
+    <section class="sourcing-section" aria-labelledby="sourcing-title">
+      <div class="container">
+        <header class="section-head section-head--center">
+          <p class="eyebrow">Sourcing</p>
+          <h2 id="sourcing-title" class="section-title">Where it comes from</h2>
+        </header>
+
+        <div class="sourcing-grid">
+          <div class="sourcing-card">
+            <h3 class="sourcing-card__title">Milk</h3>
+            <p class="sourcing-card__text">[Farm or supplier name, location]</p>
+          </div>
+          <div class="sourcing-card">
+            <h3 class="sourcing-card__title">Vegetables</h3>
+            <p class="sourcing-card__text">[Market or farm, delivered each morning]</p>
+          </div>
+          <div class="sourcing-card">
+            <h3 class="sourcing-card__title">Spices &amp; oils</h3>
+            <p class="sourcing-card__text">[Source, whether ground in-house]</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ LICENCE BANNER ============ -->
+    <section class="licence-banner">
+      <div class="container licence-banner__inner">
+        <div class="licence-banner__left">
+          <p class="eyebrow" style="color: #9EB3A8;">Licence &amp; Registration</p>
+          <h2 class="licence-banner__title">FSSAI: [registration status or number]</h2>
+        </div>
+        <div class="licence-banner__right">
+          <p>Display your FSSAI number here and in the footer once registered. Customers look for it.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ DELIVERY ZONES ============ -->
+    <section id="zones" class="delivery-zones" aria-labelledby="zones-title">
+      <div class="container">
+        <header class="section-head section-head--center">
+          <p class="eyebrow">Delivery Zones</p>
+          <h2 id="zones-title" class="section-title">Do we deliver to you?</h2>
+          <p class="section-lead">Check your area before you order.</p>
+        </header>
+
+        <div class="table-responsive">
+          <table class="zones-table">
+            <thead>
+              <tr>
+                <th>Zone</th>
+                <th>Areas</th>
+                <th>Delivery Time</th>
+                <th>Fee</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Zone 1</strong></td>
+                <td>[Nearby areas]</td>
+                <td>[Time]</td>
+                <td>[Free / ₹]</td>
+              </tr>
+              <tr>
+                <td><strong>Zone 2</strong></td>
+                <td>[Areas]</td>
+                <td>[Time]</td>
+                <td>[₹]</td>
+              </tr>
+              <tr>
+                <td><strong>Zone 3</strong></td>
+                <td>[Areas]</td>
+                <td>[Time]</td>
+                <td>[₹]</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ HOW TO ORDER ============ -->
+    <section id="order" class="how-to-order" aria-labelledby="order-title">
+      <div class="container">
+        <header class="section-head section-head--center">
+          <p class="eyebrow">How to Order</p>
+          <h2 id="order-title" class="section-title">Three steps, one message</h2>
+        </header>
+
+        <ol class="steps">
+          <li class="steps__item">
+            <span class="steps__num">1</span>
+            <h3 class="steps__title">Pick</h3>
+            <p class="steps__text">Choose products, a tiffin, or a plan.</p>
+          </li>
+          <li class="steps__item">
+            <span class="steps__num">2</span>
+            <h3 class="steps__title">Message</h3>
+            <p class="steps__text">Tap WhatsApp. Your order is pre-filled.</p>
+          </li>
+          <li class="steps__item">
+            <span class="steps__num">3</span>
+            <h3 class="steps__title">Receive</h3>
+            <p class="steps__text">Pay by UPI or cash. We deliver fresh.</p>
+          </li>
+        </ol>
+
+        <div class="how-to-order__cta">
+          <a href="https://wa.me/" class="btn btn--primary" target="_blank" rel="noopener">Order on WhatsApp</a>
+          <p class="how-to-order__meta">[+91 XXXXX XXXXX] · Order by [8 PM] for next-day delivery</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ POLICIES ============ -->
+    <section class="policies-section" aria-labelledby="policies-title">
+      <div class="container">
+        <header class="section-head section-head--center">
+          <p class="eyebrow">Policies</p>
+          <h2 id="policies-title" class="section-title">Simple and fair</h2>
+        </header>
+
+        <div class="policies-grid">
+          <div class="policy-item">
+            <h3 class="policy-item__title">Cut-off times</h3>
+            <p class="policy-item__text">Order by [8 PM] for next-day delivery. Same-day orders subject to availability.</p>
+          </div>
+          <div class="policy-item">
+            <h3 class="policy-item__title">Pause or cancel</h3>
+            <p class="policy-item__text">Pause, skip or cancel subscriptions anytime with [X hours] notice.</p>
+          </div>
+          <div class="policy-item">
+            <h3 class="policy-item__title">Replacements</h3>
+            <p class="policy-item__text">If anything isn't right, tell us and we'll replace or refund. [Edit policy]</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ BOTTOM CTA ============ -->
+    <section class="cta" aria-labelledby="cta-title">
+      <div class="container cta__inner">
+        <h2 id="cta-title" class="cta__title">Questions? Just say hello.</h2>
+        <p class="cta__text">We reply on WhatsApp, usually within minutes. [Add your hours]</p>
+        <a href="https://wa.me/" class="btn btn--gold" target="_blank" rel="noopener">Message Us</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="site-footer__grid">
+        <div class="site-footer__brand">
+          <p class="brand__name">NutriNest</p>
+          <p class="site-footer__tagline">Fresh from our kitchen, nested in your home.</p>
+        </div>
+
+        <nav class="site-footer__col" aria-label="Explore">
+          <h3 class="site-footer__heading">Explore</h3>
+          <ul>
+            <li><a href="kitchen-essentials.html">Kitchen Essentials</a></li>
+            <li><a href="meals-plans.html">Meals &amp; Plans</a></li>
+            <li><a href="our-kitchen.html">Our Kitchen</a></li>
+          </ul>
+        </nav>
+
+        <div class="site-footer__col">
+          <h3 class="site-footer__heading">Contact</h3>
+          <ul>
+            <li>WhatsApp: +91 XXXXX XXXXX</li>
+            <li>Instagram: @handle</li>
+            <li>Delivery areas: [list areas]</li>
+          </ul>
+        </div>
+
+        <div class="site-footer__col">
+          <h3 class="site-footer__heading">Licence</h3>
+          <ul>
+            <li>FSSAI: [to be added]</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="site-footer__bottom">
+        <p class="site-footer__copy">© <span id="year"></span> NutriNest. All rights reserved.</p>
+        <a href="https://wa.me/" class="btn btn--ghost btn--sm" target="_blank" rel="noopener">Order on WhatsApp</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

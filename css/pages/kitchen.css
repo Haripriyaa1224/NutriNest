@@ -1,0 +1,267 @@
+/* =========================================================
+   OUR KITCHEN PAGE — specific styles
+   ========================================================= */
+
+/* =========================================================
+   1. KITCHEN TOUR (Asymmetric Grid)
+   ========================================================= */
+.kitchen-tour {
+  padding-block: var(--sp-8);
+}
+
+.tour-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: var(--sp-3);
+}
+
+.tour-side {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-3);
+}
+
+.tour-side .image-placeholder {
+  flex-grow: 1;
+}
+
+/* =========================================================
+   2. HYGIENE STANDARDS
+   ========================================================= */
+.hygiene-section {
+  background-color: var(--c-bg-sand-soft);
+  padding-block: var(--sp-8);
+}
+
+.hygiene-inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--sp-7);
+  align-items: start;
+}
+
+.hygiene-title {
+  font-size: clamp(2rem, 4vw, 2.8rem);
+  color: var(--c-brand);
+  margin-bottom: var(--sp-3);
+}
+
+.hygiene-text {
+  color: var(--c-text-muted);
+  font-size: 0.95rem;
+  max-width: 40ch;
+}
+
+.hygiene-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-3);
+}
+
+.hygiene-list li {
+  position: relative;
+  padding-left: var(--sp-3);
+  font-size: 0.95rem;
+  color: var(--c-text);
+  padding-bottom: var(--sp-2);
+  border-bottom: 1px solid var(--c-border);
+}
+
+.hygiene-list li:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+/* Custom diamond bullet */
+.hygiene-list li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 6px;
+  width: 8px;
+  height: 8px;
+  background-color: var(--c-accent);
+  transform: rotate(45deg);
+}
+
+/* =========================================================
+   3. SOURCING
+   ========================================================= */
+.sourcing-section {
+  padding-block: var(--sp-8);
+}
+
+.sourcing-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--sp-3);
+}
+
+.sourcing-card {
+  border: 1px solid var(--c-border);
+  padding: var(--sp-4);
+}
+
+.sourcing-card__title {
+  font-family: var(--font-heading);
+  font-size: 1.3rem;
+  color: var(--c-brand);
+  margin-bottom: var(--sp-2);
+}
+
+.sourcing-card__text {
+  font-size: 0.85rem;
+  color: var(--c-text-muted);
+}
+
+/* =========================================================
+   4. LICENCE BANNER
+   ========================================================= */
+.licence-banner {
+  background-color: var(--c-brand);
+  color: var(--c-text-inverse);
+  padding-block: var(--sp-5);
+}
+
+.licence-banner__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid var(--c-border-inverse);
+  padding: var(--sp-4);
+  gap: var(--sp-5);
+}
+
+.licence-banner__title {
+  font-family: var(--font-heading);
+  font-size: 1.8rem;
+}
+
+.licence-banner__right p {
+  font-size: 0.85rem;
+  color: var(--c-text-inverse-muted);
+  max-width: 40ch;
+}
+
+/* =========================================================
+   5. DELIVERY ZONES TABLE
+   ========================================================= */
+.delivery-zones {
+  padding-block: var(--sp-8);
+}
+
+.table-responsive {
+  overflow-x: auto;
+  width: 100%;
+}
+
+.zones-table {
+  width: 100%;
+  max-width: 900px;
+  margin-inline: auto;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.zones-table th {
+  font-family: var(--font-body);
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--c-text-muted);
+  padding-bottom: var(--sp-2);
+  border-bottom: 1px solid var(--c-border);
+  font-weight: 500;
+}
+
+.zones-table td {
+  padding-block: var(--sp-3);
+  border-bottom: 1px solid var(--c-border);
+  font-size: 0.9rem;
+  color: var(--c-text-muted);
+}
+
+.zones-table td strong {
+  color: var(--c-text);
+  font-weight: 600;
+}
+
+/* =========================================================
+   6. HOW TO ORDER
+   ========================================================= */
+.how-to-order {
+  background-color: var(--c-bg-sand-soft);
+  padding-block: var(--sp-8);
+}
+
+.how-to-order__cta {
+  text-align: center;
+  margin-top: var(--sp-5);
+}
+
+.how-to-order__meta {
+  font-size: 0.75rem;
+  color: var(--c-text-muted);
+  margin-top: var(--sp-2);
+}
+
+/* =========================================================
+   7. POLICIES
+   ========================================================= */
+.policies-section {
+  padding-block: var(--sp-8);
+}
+
+.policies-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--sp-5);
+}
+
+.policy-item {
+  border-top: 1px solid var(--c-border);
+  padding-top: var(--sp-3);
+}
+
+.policy-item__title {
+  font-family: var(--font-body);
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: var(--sp-2);
+  color: var(--c-text);
+}
+
+.policy-item__text {
+  font-size: 0.85rem;
+  color: var(--c-text-muted);
+  line-height: 1.6;
+}
+
+/* =========================================================
+   8. RESPONSIVE
+   ========================================================= */
+@media (max-width: 1024px) {
+  .tour-grid,
+  .hygiene-inner {
+    grid-template-columns: 1fr;
+    gap: var(--sp-5);
+  }
+
+  .licence-banner__inner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .sourcing-grid,
+  .policies-grid {
+    grid-template-columns: 1fr;
+    gap: var(--sp-3);
+  }
+
+  .policy-item {
+    border-top: none;
+    border-left: 1px solid var(--c-border);
+    padding-top: 0;
+    padding-left: var(--sp-3);
+  }
+}
