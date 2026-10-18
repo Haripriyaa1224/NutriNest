@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="NutriNest — homemade, chemical-free meals and kitchen essentials delivered fresh to your door." />
+  <title>NutriNest — Homemade food, nested in your daily life</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600&family=Playfair+Display:ital,wght@0,400;0,500;1,500&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- <link rel="stylesheet" href="style.css" /> -->
+   <link rel="stylesheet" href="css/tokens.css" />
+<link rel="stylesheet" href="css/base.css" />
+<link rel="stylesheet" href="css/components.css" />
+<link rel="stylesheet" href="css/pages/home.css" />   <!-- swap per page -->
+</head>
+<body>
+
+  <!-- ============ ANNOUNCEMENT BAR ============ -->
+  <div class="announcement-bar" role="region" aria-label="Announcement">
+    <p>Made fresh daily · Chemical-free · Delivered to your door</p>
+  </div>
+
+  <!-- ============ HEADER ============ -->
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <nav class="site-nav" aria-label="Primary">
+  <ul class="site-nav__list">
+    <li><a href="index.html" class="site-nav__link" aria-current="page">Home</a></li>
+    <li><a href="kitchen-essentials.html" class="site-nav__link">Kitchen Essentials</a></li>
+    <li><a href="meals-plans.html" class="site-nav__link">Meals &amp; Plans</a></li>
+    <li><a href="our-kitchen.html" class="site-nav__link">Our Kitchen</a></li>
+  </ul>
+</nav>
+
+      <a href="/" class="brand" aria-label="NutriNest home">
+        <svg class="brand__icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M12 2 2 7l10 5 10-5-10-5ZM2 17l10 5 10-5M2 12l10 5 10-5"/>
+        </svg>
+        <span class="brand__name">NutriNest</span>
+      </a>
+
+      <a href="https://wa.me/" class="btn btn--outline btn--sm" target="_blank" rel="noopener">Order on WhatsApp</a>
+    </div>
+  </header>
+
+  <main>
+    <!-- ============ HERO ============ -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="container hero__inner">
+        <div class="hero__content">
+          <p class="eyebrow">Homemade · Pure · Personal</p>
+          <h1 id="hero-title" class="hero__title">
+            Homemade food,<br />
+            <em class="hero__title-accent">nested</em> in your<br />
+            daily life.
+          </h1>
+          <p class="hero__lead">
+            Chemical-free paneer, ready-to-cook vegetables, small-batch pickles and fresh
+            daily meals, made in our home kitchen and delivered to your door.
+          </p>
+          <div class="hero__actions">
+            <a href="#essentials" class="btn btn--primary">Shop Kitchen Essentials</a>
+            <a href="#meals" class="btn btn--outline">Explore Daily Meals</a>
+          </div>
+          <p class="hero__meta">WhatsApp · <a href="https://wa.me/" class="link-underline">+91 XXXXX XXXXX</a></p>
+        </div>
+
+        <figure class="hero__media">
+          <!-- Replace with <img src="..." alt="..."> when assets are ready -->
+          <div class="image-placeholder image-placeholder--arch" aria-hidden="true">
+            <span>Hero photo — hands, fresh vegetables</span>
+          </div>
+          <figcaption class="hero__badge">Made this morning</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ============ VALUE PROPS ============ -->
+    <section class="value-props" aria-label="Why NutriNest">
+      <div class="container">
+        <ul class="value-props__grid">
+          <li class="value-props__item">
+            <h3 class="value-props__title">No Chemicals</h3>
+            <p class="value-props__text">Paneer and vegetables, nothing added.</p>
+          </li>
+          <li class="value-props__item">
+            <h3 class="value-props__title">No Preservatives</h3>
+            <p class="value-props__text">Pickles made the traditional way.</p>
+          </li>
+          <li class="value-props__item">
+            <h3 class="value-props__title">Made Fresh Daily</h3>
+            <p class="value-props__text">Batch date on every pack.</p>
+          </li>
+          <li class="value-props__item">
+            <h3 class="value-props__title">Home Kitchen</h3>
+            <p class="value-props__text">Small scale, personally supervised.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ COLLECTIONS ============ -->
+    <section id="essentials" class="collections" aria-labelledby="collections-title">
+      <div class="container">
+        <header class="section-head section-head--center">
+          <p class="eyebrow">The Collections</p>
+          <h2 id="collections-title" class="section-title">Two kitchens, one table</h2>
+        </header>
+
+        <div class="collections__grid">
+          <article class="collection-card" id="meals">
+            <div class="image-placeholder image-placeholder--sage" aria-hidden="true">
+              <span>Paneer, cut vegetables, pickle jars</span>
+            </div>
+            <p class="eyebrow">01 — Kitchen Essentials</p>
+            <h3 class="collection-card__title">Pantry, perfected</h3>
+            <p class="collection-card__text">
+              Farm-fresh paneer, ready-to-cook vegetables and traditional pickles.
+              Skip the prep, skip the chemicals.
+            </p>
+            <a href="#" class="link-cta">Explore Essentials <span aria-hidden="true">→</span></a>
+          </article>
+
+          <article class="collection-card">
+            <div class="image-placeholder image-placeholder--sand" aria-hidden="true">
+              <span>Tiffin box and thali</span>
+            </div>
+            <p class="eyebrow">02 — Meals &amp; Plans</p>
+            <h3 class="collection-card__title">Home, on a plate</h3>
+            <p class="collection-card__text">
+              Daily tiffins and personalised plans for weight, sugar and protein goals,
+              cooked fresh each morning.
+            </p>
+            <a href="#" class="link-cta">Explore Meals &amp; Plans <span aria-hidden="true">→</span></a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ TODAY'S BOARD ============ -->
+    <section class="daily-board" aria-label="Today at NutriNest">
+      <div class="container daily-board__grid">
+        <div class="daily-board__item">
+          <p class="daily-board__label">Today's Thali</p>
+          <p class="daily-board__value">Rice, sambar, poriyal, curd, pickle</p>
+        </div>
+        <div class="daily-board__item">
+          <p class="daily-board__label">Fresh Today</p>
+          <p class="daily-board__value">Paneer · Cut vegetables · Pickle of the week</p>
+        </div>
+        <div class="daily-board__item">
+          <p class="daily-board__label">Order Cut-off</p>
+          <p class="daily-board__value">Order by 8 PM for tomorrow</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PROMISE ============ -->
+    <section class="promise" aria-labelledby="promise-title">
+      <div class="container">
+        <header class="section-head section-head--center">
+          <p class="eyebrow">Our Promise</p>
+          <h2 id="promise-title" class="section-title">Why NutriNest</h2>
+        </header>
+
+        <div class="promise__grid">
+          <article class="promise__item">
+            <span class="promise__num">01</span>
+            <h3 class="promise__title">Pure</h3>
+            <p class="promise__text">Ingredients you can read and pronounce. No chemicals, no preservatives.</p>
+          </article>
+          <article class="promise__item">
+            <span class="promise__num">02</span>
+            <h3 class="promise__title">Fresh</h3>
+            <p class="promise__text">Cooked, cut and set the same day, with the batch date on every pack.</p>
+          </article>
+          <article class="promise__item">
+            <span class="promise__num">03</span>
+            <h3 class="promise__title">Personal</h3>
+            <p class="promise__text">Meal plans built around your goals, not a one-size-fits-all template.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ STORY ============ -->
+    <section id="story" class="story" aria-labelledby="story-title">
+      <div class="container story__inner">
+        <figure class="story__media">
+          <div class="image-placeholder image-placeholder--blob" aria-hidden="true">
+            <span>Founder photo</span>
+          </div>
+        </figure>
+        <div class="story__content">
+          <p class="eyebrow">Our Story</p>
+          <h2 id="story-title" class="story__title">Cooked for your family the way we cook for ours.</h2>
+          <p class="story__text">Founder story — add 2–3 lines about why you started NutriNest.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ HOW IT WORKS ============ -->
+    <section class="how-it-works" aria-labelledby="how-title">
+      <div class="container">
+        <header class="section-head section-head--center">
+          <p class="eyebrow">Simple by Design</p>
+          <h2 id="how-title" class="section-title">How it works</h2>
+        </header>
+
+        <ol class="steps">
+          <li class="steps__item">
+            <span class="steps__num">1</span>
+            <h3 class="steps__title">Choose</h3>
+            <p class="steps__text">Essentials, a tiffin, or a diet plan.</p>
+          </li>
+          <li class="steps__item">
+            <span class="steps__num">2</span>
+            <h3 class="steps__title">Message us</h3>
+            <p class="steps__text">One tap on WhatsApp, pre-filled.</p>
+          </li>
+          <li class="steps__item">
+            <span class="steps__num">3</span>
+            <h3 class="steps__title">Enjoy fresh</h3>
+            <p class="steps__text">Packed and delivered the same day.</p>
+          </li>
+        </ol>
+
+        <div class="testimonials">
+          <figure class="testimonial">
+            <blockquote class="testimonial__quote">[Customer review]</blockquote>
+            <figcaption class="testimonial__author">[Name], [Area]</figcaption>
+          </figure>
+          <figure class="testimonial">
+            <blockquote class="testimonial__quote">[Customer review]</blockquote>
+            <figcaption class="testimonial__author">[Name], [Area]</figcaption>
+          </figure>
+          <figure class="testimonial">
+            <blockquote class="testimonial__quote">[Customer review]</blockquote>
+            <figcaption class="testimonial__author">[Name], [Area]</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CTA ============ -->
+    <section class="cta" aria-labelledby="cta-title">
+      <div class="container cta__inner">
+        <h2 id="cta-title" class="cta__title">Ready for food that feels like home?</h2>
+        <p class="cta__text">Order fresh essentials or daily meals in one message.</p>
+        <a href="https://wa.me/" class="btn btn--gold" target="_blank" rel="noopener">Order on WhatsApp</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="site-footer__grid">
+        <div class="site-footer__brand">
+          <p class="brand__name">NutriNest</p>
+          <p class="site-footer__tagline">Fresh from our kitchen, nested in your home.</p>
+        </div>
+
+        <nav class="site-footer__col" aria-label="Explore">
+          <h3 class="site-footer__heading">Explore</h3>
+          <ul>
+            <li><a href="#essentials">Kitchen Essentials</a></li>
+            <li><a href="#meals">Meals &amp; Plans</a></li>
+            <li><a href="#story">Our Kitchen</a></li>
+          </ul>
+        </nav>
+
+        <div class="site-footer__col">
+          <h3 class="site-footer__heading">Contact</h3>
+          <ul>
+            <li>WhatsApp: +91 XXXXX XXXXX</li>
+            <li>Instagram: @handle</li>
+            <li>Delivery areas: [list areas]</li>
+          </ul>
+        </div>
+
+        <div class="site-footer__col">
+          <h3 class="site-footer__heading">Licence</h3>
+          <ul>
+            <li>FSSAI: [to be added]</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="site-footer__bottom">
+        <p class="site-footer__copy">© <span id="year"></span> NutriNest. All rights reserved.</p>
+        <a href="https://wa.me/" class="btn btn--ghost btn--sm" target="_blank" rel="noopener">Order on WhatsApp</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

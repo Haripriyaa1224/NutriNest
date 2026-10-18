@@ -1,0 +1,420 @@
+/* =========================================================
+   KITCHEN ESSENTIALS PAGE — specific styles
+   ========================================================= */
+
+/* =========================================================
+   1. PAGE HERO (Centered)
+   ========================================================= */
+.page-hero {
+  padding-block: var(--sp-7) var(--sp-6);
+  text-align: center;
+  border-bottom: 1px solid var(--c-border);
+}
+
+.page-hero__inner {
+  max-width: 800px;
+  margin-inline: auto;
+}
+
+.page-hero__title {
+  font-size: clamp(2.5rem, 5vw, 3.5rem);
+  color: var(--c-brand);
+  margin-bottom: var(--sp-3);
+}
+
+.page-hero__title-accent {
+  font-style: italic;
+  color: var(--c-accent);
+  font-weight: 500;
+}
+
+.page-hero__lead {
+  color: var(--c-text-muted);
+  font-size: 1rem;
+  max-width: 55ch;
+  margin-inline: auto;
+  margin-bottom: var(--sp-4);
+}
+
+/* Filter Chips */
+.filter-chips {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--sp-2);
+}
+
+.filter-chip {
+  padding: 8px 20px;
+  border-radius: var(--radius-pill);
+  border: 1px solid var(--c-border);
+  background: transparent;
+  font-size: 0.8rem;
+  color: var(--c-text-muted);
+  transition: all var(--dur) var(--ease);
+}
+
+.filter-chip[aria-pressed="true"],
+.filter-chip:hover {
+  border-color: var(--c-text);
+  color: var(--c-text);
+}
+
+/* =========================================================
+   2. FEATURE SPLIT (Paneer Section)
+   ========================================================= */
+.feature-split {
+  padding-block: var(--sp-8);
+}
+
+.feature-split__inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--sp-7);
+  align-items: center;
+}
+
+.feature-split__title {
+  font-size: clamp(2rem, 4vw, 2.8rem);
+  color: var(--c-brand);
+  margin-bottom: var(--sp-3);
+}
+
+.feature-split__text {
+  color: var(--c-text-muted);
+  font-size: 0.95rem;
+  margin-bottom: var(--sp-4);
+  max-width: 46ch;
+}
+
+.feature-split__meta {
+  font-size: 0.75rem;
+  color: var(--c-text-muted);
+  margin-bottom: var(--sp-4);
+  font-style: italic;
+}
+
+/* Size Selectors */
+.size-selectors {
+  display: flex;
+  gap: var(--sp-2);
+  margin-bottom: var(--sp-3);
+}
+
+.size-option {
+  cursor: pointer;
+}
+
+.size-option input {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.size-option__box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 16px;
+  border: 1px solid var(--c-border);
+  border-radius: 4px;
+  transition: all var(--dur) var(--ease);
+  min-width: 80px;
+}
+
+.size-option input:checked + .size-option__box {
+  border-color: var(--c-text);
+  background-color: var(--c-bg-muted);
+}
+
+.size-option:hover .size-option__box {
+  border-color: var(--c-text-muted);
+}
+
+.size-option__weight {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--c-text);
+}
+
+.size-option__price {
+  font-size: 0.7rem;
+  color: var(--c-text-muted);
+  margin-top: 4px;
+}
+
+/* =========================================================
+   3. PROCESS STEPS (Paneer 1-2-3)
+   ========================================================= */
+.process-steps {
+  background: var(--c-bg-muted);
+  border-block: 1px solid var(--c-border);
+  padding-block: var(--sp-5);
+}
+
+.process-steps__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--sp-5);
+  text-align: center;
+}
+
+.process-steps__num {
+  display: block;
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  color: var(--c-accent);
+  margin-bottom: var(--sp-1);
+}
+
+.process-steps__title {
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.process-steps__text {
+  font-size: 0.8rem;
+  color: var(--c-text-muted);
+}
+
+/* =========================================================
+   4. PRODUCT GRID (Cut Vegetables)
+   ========================================================= */
+.product-grid-section {
+  padding-block: var(--sp-8);
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--sp-3);
+}
+
+.product-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.product-card .image-placeholder {
+  margin-bottom: var(--sp-2);
+  border-radius: 4px;
+}
+
+.product-card__title {
+  font-family: var(--font-heading);
+  font-size: 1.2rem;
+  color: var(--c-brand);
+  margin-bottom: 4px;
+}
+
+.product-card__desc {
+  font-size: 0.8rem;
+  color: var(--c-text-muted);
+  line-height: 1.4;
+  margin-bottom: var(--sp-2);
+  flex-grow: 1;
+}
+
+.product-card__price {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--c-text);
+}
+
+/* =========================================================
+   5. PICKLES GRID
+   ========================================================= */
+.pickles-section {
+  background: var(--c-bg-muted);
+  padding-block: var(--sp-8);
+}
+
+.pickle-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--sp-3);
+}
+
+.pickle-card {
+  background: #FFFFFF;
+  padding: var(--sp-3);
+  border: 1px solid var(--c-border);
+  display: flex;
+  flex-direction: column;
+}
+
+.pickle-card__title {
+  font-family: var(--font-heading);
+  font-size: 1.3rem;
+  color: var(--c-brand);
+  margin-bottom: var(--sp-2);
+}
+
+.pickle-card__meta {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: var(--sp-2);
+}
+
+.pickle-card__label {
+  font-size: 0.6rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--c-text-muted);
+}
+
+.pickle-card__heat {
+  font-size: 0.6rem;
+  color: var(--c-accent);
+  letter-spacing: 1px;
+}
+
+.pickle-card__ingredients {
+  font-size: 0.75rem;
+  color: var(--c-text-muted);
+  margin-bottom: var(--sp-3);
+  flex-grow: 1;
+}
+
+.pickle-card__price {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--c-text);
+  border-top: 1px solid var(--c-border);
+  padding-top: var(--sp-2);
+}
+
+/* =========================================================
+   6. BUNDLES SECTION (Dark)
+   ========================================================= */
+.bundles-section {
+  background: var(--c-brand);
+  color: var(--c-text-inverse);
+  padding-block: var(--sp-8);
+}
+
+.bundles-section .eyebrow,
+.bundles-section .section-title {
+  color: var(--c-text-inverse);
+}
+
+.bundle-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--sp-4);
+}
+
+.bundle-card {
+  border: 1px solid var(--c-border-inverse);
+  padding: var(--sp-4);
+  transition: background var(--dur) var(--ease);
+}
+
+.bundle-card:hover {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.bundle-card__title {
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  margin-bottom: var(--sp-2);
+}
+
+.bundle-card__desc {
+  font-size: 0.85rem;
+  color: var(--c-text-inverse-muted);
+  margin-bottom: var(--sp-4);
+  line-height: 1.5;
+}
+
+.bundle-card__price {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--c-accent);
+}
+
+/* =========================================================
+   7. ON EVERY PACK
+   ========================================================= */
+.on-pack {
+  padding-block: var(--sp-8);
+}
+
+.on-pack__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--sp-4);
+}
+
+.on-pack__item {
+  border-top: 1px solid var(--c-border);
+  padding-top: var(--sp-2);
+}
+
+.on-pack__title {
+  font-family: var(--font-body);
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.on-pack__text {
+  font-size: 0.8rem;
+  color: var(--c-text-muted);
+}
+
+/* =========================================================
+   8. FAQ SECTION
+   ========================================================= */
+.faq-section {
+  padding-block: var(--sp-8);
+  background: var(--c-bg-muted);
+}
+
+/* =========================================================
+   9. RESPONSIVE
+   ========================================================= */
+@media (max-width: 1024px) {
+  .feature-split__inner {
+    grid-template-columns: 1fr;
+    gap: var(--sp-5);
+  }
+
+  .product-grid,
+  .pickle-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .bundle-grid,
+  .on-pack__grid,
+  .process-steps__grid {
+    grid-template-columns: 1fr;
+    gap: var(--sp-3);
+  }
+}
+
+@media (max-width: 640px) {
+  .product-grid,
+  .pickle-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .size-selectors {
+    flex-wrap: wrap;
+  }
+
+  .process-steps__item {
+    border-top: 1px solid var(--c-border);
+    padding-top: var(--sp-2);
+  }
+  .process-steps__item:first-child {
+    border-top: none;
+    padding-top: 0;
+  }
+}

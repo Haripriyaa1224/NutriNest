@@ -1,0 +1,70 @@
+/* =========================================================
+   HOME PAGE — specific styles
+   ========================================================= */
+
+/* =========================================================
+   1. COLLECTIONS
+   ========================================================= */
+.collections { padding-block: var(--sp-8); }
+
+.collections__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--sp-5);
+}
+
+.collection-card .image-placeholder { margin-bottom: var(--sp-3); }
+
+.collection-card__title {
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  color: var(--c-brand);
+  margin-bottom: var(--sp-2);
+}
+
+.collection-card__text {
+  color: var(--c-text-muted);
+  font-size: 0.95rem;
+  margin-bottom: var(--sp-3);
+}
+
+/* =========================================================
+   2. STORY
+   ========================================================= */
+.story {
+  background: var(--c-bg-elevated);
+  padding-block: var(--sp-8);
+}
+
+.story__inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--sp-7);
+  align-items: center;
+}
+
+.story__title {
+  font-size: clamp(1.75rem, 3.5vw, 2.5rem);
+  color: var(--c-brand);
+  margin-bottom: var(--sp-2);
+}
+
+.story__text {
+  font-size: 0.95rem;
+  color: var(--c-text-muted);
+}
+
+/* =========================================================
+   3. HOME — RESPONSIVE
+   ========================================================= */
+@media (max-width: 1024px) {
+  .hero__inner,
+  .collections__grid,
+  .story__inner {
+    grid-template-columns: 1fr;
+    gap: var(--sp-5);
+  }
+}
+
+@media (max-width: 640px) {
+  .hero { padding-block: var(--sp-5); }
+}

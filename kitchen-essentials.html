@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="NutriNest Kitchen Essentials — Paneer, cut vegetables, pickles and bundles. Stock your kitchen, not your worries." />
+  <title>Kitchen Essentials — NutriNest</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600&family=Playfair+Display:ital,wght@0,400;0,500;1,500&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- CSS Load Order -->
+  <link rel="stylesheet" href="css/tokens.css" />
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/components.css" />
+  <link rel="stylesheet" href="css/pages/essentials.css" />
+</head>
+<body>
+
+  <!-- ============ ANNOUNCEMENT BAR ============ -->
+  <div class="announcement-bar" role="region" aria-label="Announcement">
+    <p>Made fresh daily · Chemical-free · Delivered to your door</p>
+  </div>
+
+  <!-- ============ HEADER ============ -->
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <nav class="site-nav" aria-label="Primary">
+        <ul class="site-nav__list">
+          <li><a href="index.html" class="site-nav__link">Home</a></li>
+          <li><a href="kitchen-essentials.html" class="site-nav__link" aria-current="page">Kitchen Essentials</a></li>
+          <li><a href="meals-plans.html" class="site-nav__link">Meals &amp; Plans</a></li>
+          <li><a href="our-kitchen.html" class="site-nav__link">Our Kitchen</a></li>
+        </ul>
+      </nav>
+
+      <a href="index.html" class="brand" aria-label="NutriNest home">
+        <svg class="brand__icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M12 2 2 7l10 5 10-5-10-5ZM2 17l10 5 10-5M2 12l10 5 10-5"/>
+        </svg>
+        <span class="brand__name">NutriNest</span>
+      </a>
+
+      <a href="https://wa.me/" class="btn btn--outline btn--sm" target="_blank" rel="noopener">Order on WhatsApp</a>
+    </div>
+  </header>
+
+  <main>
+    <!-- ============ PAGE HERO ============ -->
+    <section class="page-hero" aria-labelledby="page-title">
+      <div class="container page-hero__inner">
+        <p class="eyebrow">Kitchen Essentials &amp; Pantry</p>
+        <h1 id="page-title" class="page-hero__title">
+          Stock your kitchen, <em class="page-hero__title-accent">not your worries.</em>
+        </h1>
+        <p class="page-hero__lead">
+          Paneer set this morning, vegetables washed and cut, pickles made the slow, traditional way. Nothing added that doesn't belong.
+        </p>
+        
+        <!-- Filter Chips -->
+        <div class="filter-chips" role="group" aria-label="Filter categories">
+          <button class="filter-chip" aria-pressed="true">Paneer</button>
+          <button class="filter-chip" aria-pressed="false">Cut Vegetables</button>
+          <button class="filter-chip" aria-pressed="false">Pickles</button>
+          <button class="filter-chip" aria-pressed="false">Bundles</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 01 — PANEER ============ -->
+    <section class="feature-split" aria-labelledby="paneer-title">
+      <div class="container feature-split__inner">
+        <figure class="feature-split__media">
+          <div class="image-placeholder image-placeholder--arch" aria-hidden="true">
+            <span>[Photo · Fresh paneer block, cut and plated]</span>
+          </div>
+        </figure>
+        
+        <div class="feature-split__content">
+          <p class="eyebrow">01 — Paneer</p>
+          <h2 id="paneer-title" class="feature-split__title">Set this morning. At your door by evening.</h2>
+          <p class="feature-split__text">
+            Made from farm-fresh milk, curdled naturally and pressed by hand. No starch, no preservatives, no stabilisers. Soft, creamy, and it stays that way.
+          </p>
+          
+          <!-- Size Selectors -->
+          <div class="size-selectors" role="group" aria-label="Select paneer size">
+            <label class="size-option">
+              <input type="radio" name="paneer-size" value="250g" checked />
+              <span class="size-option__box">
+                <strong class="size-option__weight">250 g</strong>
+                <span class="size-option__price">[₹ price]</span>
+              </span>
+            </label>
+            <label class="size-option">
+              <input type="radio" name="paneer-size" value="500g" />
+              <span class="size-option__box">
+                <strong class="size-option__weight">500 g</strong>
+                <span class="size-option__price">[₹ price]</span>
+              </span>
+            </label>
+            <label class="size-option">
+              <input type="radio" name="paneer-size" value="1kg" />
+              <span class="size-option__box">
+                <strong class="size-option__weight">1 kg</strong>
+                <span class="size-option__price">[₹ price]</span>
+              </span>
+            </label>
+          </div>
+
+          <p class="feature-split__meta">Best within [X] days · Keep refrigerated · Batch date on every pack</p>
+          
+          <a href="https://wa.me/" class="btn btn--primary" target="_blank" rel="noopener">Order Paneer on WhatsApp</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PROCESS STEPS (Value Props variant) ============ -->
+    <section class="process-steps" aria-label="How our paneer is made">
+      <div class="container">
+        <ol class="process-steps__grid">
+          <li class="process-steps__item">
+            <span class="process-steps__num">1</span>
+            <h3 class="process-steps__title">Fresh milk</h3>
+            <p class="process-steps__text">Sourced from [farm / local supplier].</p>
+          </li>
+          <li class="process-steps__item">
+            <span class="process-steps__num">2</span>
+            <h3 class="process-steps__title">Natural curdling</h3>
+            <p class="process-steps__text">Lemon or curd, nothing synthetic.</p>
+          </li>
+          <li class="process-steps__item">
+            <span class="process-steps__num">3</span>
+            <h3 class="process-steps__title">Pressed and packed</h3>
+            <p class="process-steps__text">Hand-pressed, sealed, dated, delivered.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============ 02 — CUT VEGETABLES ============ -->
+    <section class="product-grid-section" aria-labelledby="veg-title">
+      <div class="container">
+        <header class="section-head section-head--center">
+          <p class="eyebrow">02 — Cut Vegetables</p>
+          <h2 id="veg-title" class="section-title">Washed. Cut. Ready to cook.</h2>
+          <p class="section-lead">Save the chopping, keep the freshness. Packed in breathable, food-grade bags.</p>
+        </header>
+
+        <div class="product-grid">
+          <!-- Card 1 -->
+          <article class="product-card">
+            <div class="image-placeholder image-placeholder--sage" aria-hidden="true">[Photo]</div>
+            <h3 class="product-card__title">Curry Cuts</h3>
+            <p class="product-card__desc">Onion, tomato, potato, beans - serves 3-4</p>
+            <p class="product-card__price">[₹ price]</p>
+          </article>
+          <!-- Card 2 -->
+          <article class="product-card">
+            <div class="image-placeholder image-placeholder--sand" aria-hidden="true">[Photo]</div>
+            <h3 class="product-card__title">Sambar Mix</h3>
+            <p class="product-card__desc">Drumstick, pumpkin, brinjal, carrot - serves 4</p>
+            <p class="product-card__price">[₹ price]</p>
+          </article>
+          <!-- Card 3 -->
+          <article class="product-card">
+            <div class="image-placeholder image-placeholder--sage" aria-hidden="true">[Photo]</div>
+            <h3 class="product-card__title">Salad Pack</h3>
+            <p class="product-card__desc">Cucumber, carrot, beetroot, onion - serves 2-3</p>
+            <p class="product-card__price">[₹ price]</p>
+          </article>
+          <!-- Card 4 -->
+          <article class="product-card">
+            <div class="image-placeholder image-placeholder--sand" aria-hidden="true">[Photo]</div>
+            <h3 class="product-card__title">Stir-fry Mix</h3>
+            <p class="product-card__desc">Capsicum, cabbage, beans, carrot - serves 3</p>
+            <p class="product-card__price">[₹ price]</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 03 — PICKLES ============ -->
+    <section class="pickles-section" aria-labelledby="pickles-title">
+      <div class="container">
+        <header class="section-head section-head--center">
+          <p class="eyebrow">03 — Pickles</p>
+          <h2 id="pickles-title" class="section-title">Small batch. Slow made.</h2>
+          <p class="section-lead">Preserved with oil, salt and time. Never with chemicals.</p>
+        </header>
+
+        <div class="pickle-grid">
+          <!-- Pickle 1 -->
+          <article class="pickle-card">
+            <h3 class="pickle-card__title">Mango</h3>
+            <div class="pickle-card__meta">
+              <span class="pickle-card__label">Heat</span>
+              <span class="pickle-card__heat" aria-label="Heat level: 3 out of 5">●●●○○</span>
+            </div>
+            <p class="pickle-card__ingredients">[ingredients list]</p>
+            <p class="pickle-card__price">200 g · 500 g · [₹ price]</p>
+          </article>
+          <!-- Pickle 2 -->
+          <article class="pickle-card">
+            <h3 class="pickle-card__title">Lemon</h3>
+            <div class="pickle-card__meta">
+              <span class="pickle-card__label">Heat</span>
+              <span class="pickle-card__heat" aria-label="Heat level: 2 out of 5">●●○○○</span>
+            </div>
+            <p class="pickle-card__ingredients">[ingredients list]</p>
+            <p class="pickle-card__price">200 g · 500 g · [₹ price]</p>
+          </article>
+          <!-- Pickle 3 -->
+          <article class="pickle-card">
+            <h3 class="pickle-card__title">Garlic</h3>
+            <div class="pickle-card__meta">
+              <span class="pickle-card__label">Heat</span>
+              <span class="pickle-card__heat" aria-label="Heat level: 4 out of 5">●●●●○</span>
+            </div>
+            <p class="pickle-card__ingredients">[ingredients list]</p>
+            <p class="pickle-card__price">200 g · 500 g · [₹ price]</p>
+          </article>
+          <!-- Pickle 4 -->
+          <article class="pickle-card">
+            <h3 class="pickle-card__title">[Your signature]</h3>
+            <div class="pickle-card__meta">
+              <span class="pickle-card__label">Heat</span>
+              <span class="pickle-card__heat" aria-label="Heat level: 3 out of 5">●●●○○</span>
+            </div>
+            <p class="pickle-card__ingredients">[ingredients list]</p>
+            <p class="pickle-card__price">200 g · 500 g · [₹ price]</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 04 — BUNDLES ============ -->
+    <section class="bundles-section" aria-labelledby="bundles-title">
+      <div class="container">
+        <header class="section-head section-head--center">
+          <p class="eyebrow">04 — Bundles</p>
+          <h2 id="bundles-title" class="section-title">Order once, eat well all week</h2>
+        </header>
+
+        <div class="bundle-grid">
+          <article class="bundle-card">
+            <h3 class="bundle-card__title">Weekly Veg Box</h3>
+            <p class="bundle-card__desc">A week of cut vegetables, delivered on schedule.</p>
+            <p class="bundle-card__price">[₹ price] / week</p>
+          </article>
+          <article class="bundle-card">
+            <h3 class="bundle-card__title">Paneer + Veg Combo</h3>
+            <p class="bundle-card__desc">Fresh paneer with matching curry cuts.</p>
+            <p class="bundle-card__price">[₹ price]</p>
+          </article>
+          <article class="bundle-card">
+            <h3 class="bundle-card__title">Pickle Trio</h3>
+            <p class="bundle-card__desc">Three jars, three flavours, one gift-ready set.</p>
+            <p class="bundle-card__price">[₹ price]</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ ON EVERY PACK ============ -->
+    <section class="on-pack" aria-labelledby="pack-title">
+      <div class="container">
+        <header class="section-head section-head--center">
+          <p class="eyebrow">On Every Pack</p>
+          <h2 id="pack-title" class="section-title">Nothing hidden on the label</h2>
+        </header>
+
+        <div class="on-pack__grid">
+          <div class="on-pack__item">
+            <h3 class="on-pack__title">Batch Date</h3>
+            <p class="on-pack__text">Made on, packed on.</p>
+          </div>
+          <div class="on-pack__item">
+            <h3 class="on-pack__title">Ingredients</h3>
+            <p class="on-pack__text">The full list, in plain words.</p>
+          </div>
+          <div class="on-pack__item">
+            <h3 class="on-pack__title">Best Before</h3>
+            <p class="on-pack__text">Storage and use-by guidance.</p>
+          </div>
+          <div class="on-pack__item">
+            <h3 class="on-pack__title">Made By</h3>
+            <p class="on-pack__text">NutriNest, [your area].</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ FAQ (Good to know) ============ -->
+    <section class="faq-section" aria-labelledby="faq-title">
+      <div class="container">
+        <header class="section-head section-head--center">
+          <h2 id="faq-title" class="section-title">Good to know</h2>
+        </header>
+
+        <!-- Uses new accordion component defined in components.css -->
+        <div class="accordion">
+          <details class="accordion__item">
+            <summary class="accordion__header">
+              How long does paneer last?
+              <span class="accordion__icon" aria-hidden="true"></span>
+            </summary>
+            <div class="accordion__content">
+              <p>[X] days refrigerated. Every pack shows its batch date.</p>
+            </div>
+          </details>
+          
+          <details class="accordion__item">
+            <summary class="accordion__header">
+              How are vegetables washed?
+              <span class="accordion__icon" aria-hidden="true"></span>
+            </summary>
+            <div class="accordion__content">
+              <p>[Describe your wash process] before cutting and packing.</p>
+            </div>
+          </details>
+
+          <details class="accordion__item">
+            <summary class="accordion__header">
+              What is the minimum order?
+              <span class="accordion__icon" aria-hidden="true"></span>
+            </summary>
+            <div class="accordion__content">
+              <p>[₹ amount] for free delivery in [your delivery areas].</p>
+            </div>
+          </details>
+
+          <details class="accordion__item">
+            <summary class="accordion__header">
+              Can I set up a weekly order?
+              <span class="accordion__icon" aria-hidden="true"></span>
+            </summary>
+            <div class="accordion__content">
+              <p>Yes. Message us once and we'll deliver on your schedule. Pause anytime.</p>
+            </div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ BOTTOM CTA ============ -->
+    <section class="cta" aria-labelledby="cta-title">
+      <div class="container cta__inner">
+        <h2 id="cta-title" class="cta__title">Fresh essentials, one message away.</h2>
+        <p class="cta__text">Tell us what you need and your area. We'll confirm in minutes.</p>
+        <a href="https://wa.me/" class="btn btn--gold" target="_blank" rel="noopener">Order on WhatsApp</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="site-footer__grid">
+        <div class="site-footer__brand">
+          <p class="brand__name">NutriNest</p>
+          <p class="site-footer__tagline">Fresh from our kitchen, nested in your home.</p>
+        </div>
+
+        <nav class="site-footer__col" aria-label="Explore">
+          <h3 class="site-footer__heading">Explore</h3>
+          <ul>
+            <li><a href="kitchen-essentials.html">Kitchen Essentials</a></li>
+            <li><a href="meals-plans.html">Meals &amp; Plans</a></li>
+            <li><a href="our-kitchen.html">Our Kitchen</a></li>
+          </ul>
+        </nav>
+
+        <div class="site-footer__col">
+          <h3 class="site-footer__heading">Contact</h3>
+          <ul>
+            <li>WhatsApp: +91 XXXXX XXXXX</li>
+            <li>Instagram: @handle</li>
+            <li>Delivery areas: [list areas]</li>
+          </ul>
+        </div>
+
+        <div class="site-footer__col">
+          <h3 class="site-footer__heading">Licence</h3>
+          <ul>
+            <li>FSSAI: [to be added]</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="site-footer__bottom">
+        <p class="site-footer__copy">© <span id="year"></span> NutriNest. All rights reserved.</p>
+        <a href="https://wa.me/" class="btn btn--ghost btn--sm" target="_blank" rel="noopener">Order on WhatsApp</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

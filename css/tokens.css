@@ -1,0 +1,48 @@
+/* =========================================================
+   1. DESIGN TOKENS
+   ========================================================= */
+:root {
+  /* Colour system */
+  --c-bg:            #FAF7F2;
+  --c-bg-muted:      #F3EFE6;
+  --c-bg-elevated:   #E8E6D9;
+  --c-surface-arch:  #E5DEC9;
+  --c-surface-sage:  #E4EBE4;
+  --c-surface-sand:  #E5DEC9;
+  --c-surface-blob:  #D5CEBA;
+
+  --c-text:          #22261E;
+  --c-text-muted:    #5A5F54;
+  --c-text-inverse:  #FFFFFF;
+  --c-text-inverse-muted: #B0C4B8;
+
+  --c-brand:         #153A2A;
+  --c-brand-hover:   #0D261B;
+  --c-accent:        #D4AF59;
+  --c-accent-hover:  #C6A048;
+  --c-border:        #E2DDD1;
+  --c-border-inverse: rgba(255, 255, 255, 0.12);
+
+  /* Typography */
+  --font-heading: 'Playfair Display', Georgia, serif;
+  --font-body:    'DM Sans', system-ui, -apple-system, sans-serif;
+
+  /* Spacing scale (8px base) */
+  --sp-1: 8px;
+  --sp-2: 16px;
+  --sp-3: 24px;
+  --sp-4: 32px;
+  --sp-5: 48px;
+  --sp-6: 64px;
+  --sp-7: 96px;
+  --sp-8: 128px;
+
+  /* Layout */
+  --container: 1200px;
+  --gutter: 40px;
+  --radius-pill: 999px;
+
+  /* Motion */
+  --ease: cubic-bezier(0.4, 0, 0.2, 1);
+  --dur: 200ms;
+}
